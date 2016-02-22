@@ -66,31 +66,33 @@
     <div class="container">
 
 
-    <div class = "col-sm-6 col-sm-offset-3">
-      
-      <!--<h3>send me a sessage</h3>-->
-      <!--<form role="form" id = "contactform">-->
-
-
-      <!--</form>-->
-      <div class="row">
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+    <form role="form"  method = "POST" id="contactForm">
+        <div class="row">
             <div class="form-group col-sm-6">
                 <label for="name" class="h4">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                <div class="help-block with-errors"></div>
             </div>
             <div class="form-group col-sm-6">
                 <label for="email" class="h4">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                <div class="help-block with-errors"></div>
             </div>
         </div>
         <div class="form-group">
             <label for="message" class="h4 ">Message</label>
             <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="help-block with-errors"></div>
         </div>
         <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
-<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
-     </div>
-
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+    </form>
+  
+</div>
+</div>
 
         <hr class="featurette-divider">
 
@@ -109,6 +111,8 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <script type = "text/javascript" src="BootstrapFiles/js/scripts.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
