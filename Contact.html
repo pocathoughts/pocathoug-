@@ -42,8 +42,8 @@
                 </button>
                 <a style = "letter-spacing: 8px; margin-right: 20px" class="navbar-brand" href="index.html"> North Central Florida Beach Volleyball </a>
                 <a class="navbar-brand" href="About.html">About</a>
-                <a class="navbar-brand" href="juniors.html">Juniors</a>
-                <a class="navbar-brand" href="tourney.html">Tournaments</a>
+                <a class="navbar-brand" href="Juniors.html">Juniors</a>
+                <a class="navbar-brand" href="Tourney.html">Tournaments</a>
                 <a class="navbar-brand" href="Contact.html">Photos</a>
                 <a class="navbar-brand" href="Contact.html">Contact</a>
             </div>
@@ -65,34 +65,26 @@
     <!-- Page Content -->
     <div class="container">
 
-
 <div class="row">
 <div class="col-sm-6 col-sm-offset-3">
-    <form role="form" method = "POST" id="contactForm">
-        <div class="row">
-            <div class="form-group col-sm-6">
-                <label for="name" class="h4">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
-                <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group col-sm-6">
-                <label for="email" class="h4">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                <div class="help-block with-errors"></div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="message" class="h4 ">Message</label>
-            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-            <div class="help-block with-errors"></div>
-        </div>
-        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
-        <div id="msgSubmit" class="h3 text-center hidden"></div>
-        <div class="clearfix"></div>
-    </form>
-  
+<form action="contact.php" method="post">
+<div class="row">
+    Your name<br>
+    <input type="text" name="cf_name"><br>
+    Your e-mail<br>
+    <input type="text" name="cf_email"><br>
+    </div>
+    <div class = "row">
+    Message<br>
+    <textarea name="cf_message"></textarea><br>
+    </div>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear">
+</form>
 </div>
 </div>
+
+
 
         <hr class="featurette-divider">
 
